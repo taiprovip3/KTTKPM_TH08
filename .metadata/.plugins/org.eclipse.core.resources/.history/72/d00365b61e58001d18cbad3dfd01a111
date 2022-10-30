@@ -1,0 +1,6 @@
+server.port=8761
+eureka.client.register-with-eureka=false
+spring.application.name=eureka-server
+eureka.client.fetch-registry=false
+
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
