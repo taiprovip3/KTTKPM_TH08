@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: user-service
+          uri: http://localhost:9001
+          predicates:
+            - Path=/user
+        - id: department-service
+          uri: http://localhost:9002
+          predicates:
+            - Path=/department
+server:
+  port: 9000
